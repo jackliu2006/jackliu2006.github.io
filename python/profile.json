@@ -1,0 +1,160 @@
+{
+    "name": "Xiao Liu",
+    "title": "You never old",
+    "city": "Stuttgart",
+    "country": "Germany",
+    "mobile": "015561665338",
+    "email": "jackliu2006@gmail.com",
+    "web": "https://jackliu2006.github.io",
+    "linkedin": "www.linkedin.com/in/jackliu2006",
+    "profile": [
+        "Over 15 years of experience including 5+ years as cloud architect...",
+        "Proven expertise in migrating on-premise applications to Azure...",
+        "Adept at leveraging Docker, Kubernetes, Terraform...",
+        "Comprehensive understanding of marketing/sales and CRM processes...",
+        "Committed to delivering seamless business processes..."
+    ],
+    "certificates": [
+        {
+            "date": "Mar 2021",
+            "name": "Azure Solutions Architect Expert"
+        },
+        {
+            "date": "Nov 2022",
+            "name": "Azure Security Engineer Associate"
+        },
+        {
+            "date": "Dec 2022",
+            "name": "Azure Developer Associate"
+        }
+    ],
+    "education": {
+        "period": "Sep 1999 — Jun 2003",
+        "degree": "Bachelor of Computer Science",
+        "institution": "Dalian Jiaotong University",
+        "location": "Dalian, China"
+    },
+    "employment_history": [
+        {
+            "period": "Oct 2019 — Present",
+            "title": "Cloud Solution Architect",
+            "company": "Mercedes Benz Mobility AG",
+            "location": "Stuttgart, Germany",
+            "responsibilities": [
+                "Architected and engineered cloud-native solutions for seamless migration of on-premise applications to cloud environments.",
+                "Designed microservices cloud architecture leveraging Kubernetes and container applications, ensuring adherence to best practices.",
+                "Established CI/CD DevOps pipelines utilizing Terraform, GitHub Actions, and Azure Pipeline to enhance deployment efficiency.",
+                "Implemented security measures aligned with application and network security policies, maintaining robust protection of cloud resources.",
+                "Collaborated with cross-functional teams to optimize resource allocation, improve performance, and ensure compliance with industry standards."
+            ]
+        },
+        {
+            "period": "Sep 2018 — Sep 2019",
+            "title": "Executive Consultant",
+            "company": "CGI Germany",
+            "location": "Stuttgart, Germany",
+            "responsibilities": [
+                "Delivered customer domain solution architecture consulting for customer data management and CRM.",
+                "Designed system landscapes and established customer master data management rules.",
+                "Developed customer domain data models and data integration strategies."
+            ]
+        },
+        {
+            "period": "Apr 2012 — Jul 2018",
+            "title": "Solution Architect and Application Owner",
+            "company": "Daimler China",
+            "location": "Beijing, China",
+            "responsibilities": [
+                "Designed and implemented Salesforce CRM system for Daimler China, enhancing operational efficiency.",
+                "Utilized Salesforce Sales and Service Cloud for integrated business processes across wholesale, call center, and retail sectors.",
+                "Managed centralized customer data over distributed applications to improve data accessibility and accuracy.",
+                "Collaborated with cross-functional teams to define cloud architecture requirements and ensure scalability.",
+                "Streamlined system integration using industry best practices and emerging technologies."
+            ]
+        },
+        {
+            "period": "Jun 2008 — Mar 2012",
+            "title": "Solution Architect and Application Manager",
+            "company": "BMW China",
+            "location": "Beijing, China",
+            "responsibilities": [
+                "Led technical design and implementation of BMW China CRM system, enhancing customer data quality.",
+                "Eliminated redundant CRM processes, streamlining application usage.",
+                "Established customer master data management, resulting in unique customer records.",
+                "Collaborated with cross-functional teams to align cloud architecture with business objectives.",
+                "Developed scalable cloud solutions to improve CRM efficiency and customer experiences."
+            ]
+        },
+        {
+            "period": "Jan 2007 — Jun 2008",
+            "title": "Senior Software Engineer",
+            "company": "Oracle China",
+            "location": "Beijing, China",
+            "responsibilities": [
+                "Worked on Oracle Fusion Middleware development using Java and J2EE stack.",
+                "Designed and implemented scalable cloud solutions in Azure.",
+                "Developed CI/CD pipelines to streamline application deployment.",
+                "Optimized application performance through system integration techniques.",
+                "Collaborated with cross-functional teams to enhance project delivery."
+            ]
+        },
+        {
+            "period": "Aug 2003 — Dec 2006",
+            "title": "Software Engineer and Tech Lead",
+            "company": "Tata Consultancy Services",
+            "location": "Beijing, China",
+            "responsibilities": [
+                "Led team to design and implement GE China Oracle ERP system.",
+                "Developed and executed multiple Java tech stack projects for GE global.",
+                "Enhanced system integration through WebMethods integration strategies.",
+                "Collaborated with cross-functional teams to align IT solutions with business objectives.",
+                "Mentored junior engineers on best practices in software development and cloud technologies."
+            ]
+        }
+    ],
+    "skills": {
+        "expert": [
+            "Oracle",
+            "Web Application Servers",
+            "Bash",
+            "Azure Cloud",
+            "Git",
+            "Terraform",
+            "CI/CD"
+        ],
+        "experienced": [
+            "Java",
+            "Golang",
+            "Apache Kafka",
+            "Python",
+            "SQL",
+            "Kubernetes",
+            "Helm Chart",
+            "JavaScript",
+            "Docker",
+            "Github Action",
+            "Agile and Scrum",
+            "HTML & CSS"
+        ]
+    },
+    "languages": [
+        {
+            "name": "English",
+            "level": "Proficient"
+        },
+        {
+            "name": "German",
+            "level": "B1"
+        },
+        {
+            "name": "Chinese",
+            "level": "Native speaker"
+        }
+    ],
+    "hobbies": [
+        "Travelling",
+        "Programming",
+        "Reading",
+        "Hiking"
+    ]
+}

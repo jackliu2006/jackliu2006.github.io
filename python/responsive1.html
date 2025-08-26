@@ -20,7 +20,7 @@
 
                 </div>
                 <div class="name-wrapper">
-                    <h1>{{ cv.firs_name}} {{ cv.last_name}}</h1><!-- YOUR NAME AND LAST NAME  -->
+                    <h1>{{ cv.name}}</h1><!-- YOUR NAME AND LAST NAME  -->
                 </div>
                 <div class="clearfix"></div>
                 <div class="contact-info clearfix">
@@ -67,7 +67,7 @@
                 <div class="experience-wrapper">
                     {% for cert in cv.certificates %}
                         <div class="company-wrapper clearfix">
-                            <div class="experience-title time">{{ cert.date }}</div>
+                            <div class="experience-title time">{{ cert.start_date }}</div>
                         </div>
                         <div class="job-wrapper clearfix">
                             <div class="experience-title">{{ cert.name }}</div>
@@ -79,13 +79,13 @@
                 <div class="experience-wrapper">
                     {% for edu in cv.educations %}
                         <div class="edu-item-wrapper clearfix">
-                            <div class="experience-title time">{{ edu.period }}</div>
+                            <div class="experience-title time">{{ edu.duration }}</div>
                         </div>
                         <div class="edu-item-wrapper clearfix">
                             <div class="experience-title">{{ edu.degree_and_major }}</div>
                         </div>
                         <div class="edu-item-wrapper clearfix">
-                            <div class="experience-title">{{ edu.institution }}</div>
+                            <div class="experience-title">{{ edu.school }}</div>
                         </div>
                         <div class="jedu-item-wrapper clearfix">
                             <div class="experience-title">{{ edu.location }}</div>
