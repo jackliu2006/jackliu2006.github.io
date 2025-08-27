@@ -51,8 +51,16 @@
             </div>
         </section>
 
-        
-        <section class="experience section-padding">
+        <section class="section-padding-right">
+            <div class="tabs">
+                <div class="tab active-tab" onclick="showTab(0)">Summary</div>
+                <div class="tab" onclick="showTab(1)">Skills</div>
+                <div class="tab" onclick="showTab(2)">Showcases</div>
+            </div>
+         </section>
+
+
+        <section class="experience section-padding tab-content active-content">
             <div class="container">
                 <h3 class="experience-title">Summary</h3>
                 <div class="experience-wrapper">
@@ -76,6 +84,21 @@
                 </div>
 
                
+                <h3 class="experience-title">Educations</h3>
+                <div class="experience-wrapper">
+                    {% for edu in cv.educations %}
+                        <div class="edu-item-wrapper clearfix">
+                            <div class="experience-title time">{{ edu.duration }}</div>
+                        </div>
+                        <div class="edu-item-wrapper clearfix">
+                            <div class="experience-title">{{ edu.degree_and_major }}</div>
+                        </div>
+                        <div class="edu-item-wrapper clearfix">
+                            <div class="experience-title">{{ edu.school }}</div>
+                        </div>
+                      
+                    {% endfor %}
+                </div>
 
                 
                 <h3 class="experience-title">Languages</h3>
@@ -109,23 +132,31 @@
                     {% endfor %}
                 </div><!--Skill experience-->
 
+            </div>
+        </section>
 
+        <section class="experience section-padding tab-content">
+             <div class="container">
                 <h3 class="experience-title">Skills</h3> <!-- YOUR SET OF SKILLS  -->
                 <div class="experience-wrapper">
                     <ul>
                         {% for skill in cv.skills %}
                             <li>
-                                <div class="company-wrapper clearfix">
+                                <div class="cert-date-wrapper  clearfix">
                                     <div class="experience-title time">{{ skill.name }}</div>
                                 </div>
-                                <div class="job-wrapper clearfix">
+                                <div class="cert-title-wrapper  clearfix">
                                     <div class="experience-title">{{ skill.level }}</div>
                                 </div>
                             </li>
                         {% endfor %}
                     </ul>
                 </div>
-            </div>
+             </div>
+        </section>
+
+         <section class="experience section-padding tab-content">
+            Coming Soon!
         </section>
 
         <div class="clearfix"></div>
@@ -134,6 +165,17 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
     <script src="./script.js"></script>
 
+<script>
+  function showTab(index) {
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach((tab, i) => {
+      tab.classList.toggle('active-tab', i === index);
+      contents[i].classList.toggle('active-content', i === index);
+    });
+  }
+</script>
 </body>
 
 </html>

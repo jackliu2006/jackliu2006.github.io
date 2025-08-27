@@ -122,7 +122,9 @@
             "Azure Cloud",
             "Git",
             "Terraform",
-            "CI/CD"
+            "CI/CD",
+            "Github Action",
+            "Kubernetes"
         ],
         "experienced": [
             "Java",
@@ -130,11 +132,9 @@
             "Apache Kafka",
             "Python",
             "SQL",
-            "Kubernetes",
             "Helm Chart",
             "JavaScript",
             "Docker",
-            "Github Action",
             "Agile and Scrum",
             "HTML & CSS"
         ]
