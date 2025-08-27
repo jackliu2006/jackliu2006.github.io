@@ -19,15 +19,23 @@
     "certificates": [
         {
             "date": "Mar 2021",
-            "name": "Azure Solutions Architect Expert"
+            "name": "Azure Solutions Architect Expert",
+            "link": "https://www.credly.com/badges/d77f20c0-9287-4880-b0c5-8bddef28931d/linked_in_profile"
         },
         {
             "date": "Nov 2022",
-            "name": "Azure Security Engineer Associate"
+            "name": "Azure Security Engineer Associate",
+            "link": "https://www.credly.com/badges/1c524968-fab6-4eb9-816e-956ad15c4c36/public_url"
         },
         {
             "date": "Dec 2022",
-            "name": "Azure Developer Associate"
+            "name": "Azure Developer Associate",
+            "link": "https://www.credly.com/badges/251ea322-21c6-463b-9ecd-6d4fed931a9e/public_url"
+        },
+        {
+            "date":"Nov 2023",
+            "name": "Supervised Machine Learning: Regression and Classification",
+            "link": "https://www.coursera.org/account/accomplishments/certificate/3XCRJETZZTV5"
         }
     ],
     "education": {

@@ -19,7 +19,7 @@ cv = {
     "self_intro": profile_data.get("selfspots"),
     "summary_lines": profile_data.get("profile", []),
     "certificates": [
-        {"start_date": cert["date"], "name": cert["name"]} for cert in profile_data.get("certificates", [])
+        {"start_date": cert["date"], "name": cert["name"], "link": cert["link"]} for cert in profile_data.get("certificates", [])
     ],
     "educations": [
         {

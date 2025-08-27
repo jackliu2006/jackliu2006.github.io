@@ -23,6 +23,12 @@ a {
   text-decoration: none;
 }
 
+
+a:hover {
+      text-decoration: underline;
+}
+
+
 .clearfix::after,
 .clearfix::before {
   content: " ";
