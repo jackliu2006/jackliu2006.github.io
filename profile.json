@@ -116,21 +116,18 @@
     ],
     "skills": {
         "expert": [
-            "Oracle",
-            "Web Application Servers",
-            "Bash",
             "Azure Cloud",
-            "Git",
+            "Git/Github Action",
             "Terraform",
             "CI/CD",
-            "Github Action",
             "Kubernetes"
         ],
         "experienced": [
+            "microservices",
+            "Python",
             "Java",
             "Golang",
             "Apache Kafka",
-            "Python",
             "SQL",
             "Helm Chart",
             "JavaScript",
