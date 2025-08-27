@@ -66,6 +66,7 @@ a {
   text-transform: uppercase;
   line-height: 1em;
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 @media (max-width: 1200px) {
   .profile h1 {
@@ -468,7 +469,53 @@ a {
 }
 @media (max-width: 450px) {
   .experience .edu-item-wrapper {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+}
+
+.experience .summary-line-wrapper{
+  width: 100%;
+  float: left;
+  text-align: left;
+  padding-right: 5%;
+  margin-bottom: 60px;
+}
+@media (max-width: 450px) {
+  .experience .summary-line-wrapper {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+
+.experience .summary-line-text {
+  color: grey;
+  margin-top: 10px;
+}
+
+.experience .cert-date-wrapper {
+  width: 30%;
+  float: left;
+  text-align: left;
+  padding-right: 5%;
+  margin-bottom: 20px;
+}
+@media (max-width: 450px) {
+  .experience .cert-date-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.experience .cert-title-wrapper {
+  width: 70%;
+  float: left;
+  text-align: left;
+  padding-right: 5%;
+  margin-bottom: 20px;
+}
+@media (max-width: 450px) {
+  .experience .cert-title-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
   }
 }

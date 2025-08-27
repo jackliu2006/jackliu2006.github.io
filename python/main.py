@@ -16,8 +16,8 @@ cv = {
     "city": profile_data.get("city"),
     "country": profile_data.get("country"),
     "linkedin": profile_data.get("linkedin"),
-    "self_intro": "\n".join(profile_data.get("profile", [])),
-    "summary": "\n".join(profile_data.get("profile", [])),
+    "self_intro": profile_data.get("selfspots"),
+    "summary_lines": profile_data.get("profile", []),
     "certificates": [
         {"start_date": cert["date"], "name": cert["name"]} for cert in profile_data.get("certificates", [])
     ],
@@ -34,6 +34,7 @@ cv = {
         {
             "company": job["company"],
             "title": job["title"],
+            "period": job["period"],
             "description": "\n".join(job.get("responsibilities", []))
         } for job in profile_data.get("employment_history", [])
     ],
@@ -53,7 +54,7 @@ template = env.get_template("responsive1.html")
 rendered_html = template.render(cv=cv)
 
 # Save the output
-with open("output_cv_updated.html", "w", encoding="utf-8") as f:
+with open("index.html", "w", encoding="utf-8") as f:
     f.write(rendered_html)
 
 print("Updated CV rendered and saved to output_cv_updated.html")

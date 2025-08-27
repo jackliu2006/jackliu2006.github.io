@@ -16,42 +16,38 @@
     <div class="resume-wrapper">
         <section class="profile section-padding">
             <div class="container">
-                <div class="picture-resume-wrapper">
 
-                </div>
                 <div class="name-wrapper">
                     <h1>{{ cv.name}}</h1><!-- YOUR NAME AND LAST NAME  -->
                 </div>
-                <div class="clearfix"></div>
+
+                <div class="contact-presentation"> <!-- YOUR PRESENTATION RESUME  -->
+                    <p><span class="bold"></span>{{ cv.self_intro }}</p>
+                </div>
+
                 <div class="contact-info clearfix">
                     <ul class="list-titles">
-                        <li>Call</li>
+                        <li>Mobil</li>
                         <li>Mail</li>
                         <li>Web</li>
                         <li>Home</li>
+                        <li>Linkedin</li>
                     </ul>
                     <ul class="list-content ">
                         <li>{{ cv.mobile}}</li>
                         <li>{{ cv.email }}</li>
-                        <li>{{ cv.web}}</li>
+                        <li><a href="{{ cv.web }}">{{ cv.web }}</a></li>
                         <li>{{ cv.city}} {{ cv.country}}</li>
+                        <li><a href="{{ cv.linkedin }}">{{ cv.linkedin }}</a></li> 
                     </ul>
                 </div>
-                <div class="contact-presentation"> <!-- YOUR PRESENTATION RESUME  -->
-                    <p><span class="bold"></span>{{ cv.self_intro }}</p>
-                </div>
-                <div class="contact-social clearfix">
-                    <ul class="list-titles">
-                        <!-- <li>Twitter</li> -->
-                        <li>Linkedin</li>
-                        <!-- <li>Codepen</li> -->
-                    </ul>
-                    <ul class="list-content"> <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
-                        <!-- <li><a href="">@janderson</a></li> YOUR TWITTER USER  -->
-                        <li><a href="">{{ cv.linkedin }}</a></li> <!-- YOUR Linkedin USER  -->
-                       <!--  <li><a href="">janderson</a></li>  --><!-- YOUR BEHANCE USER  -->
-                    </ul>
-                </div>
+
+                <!-- <div class="contact-presentation">  
+                {% for line in cv.summary_lines %}
+                    <p>- {{ line }}</p>      
+                {% endfor %}
+                </div> -->
+
             </div>
         </section>
 
@@ -59,41 +55,31 @@
         <section class="experience section-padding">
             <div class="container">
                 <h3 class="experience-title">Summary</h3>
-                <p>
-                   {{ cv.summary }}
-                </p>
-
+                <div class="experience-wrapper">
+                    <div class="summary-line-wrapper clearfix">
+                        {% for line in cv.summary_lines %}
+                        <div class="summary-line-text">{{ line }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+                 
                 <h3 class="experience-title">Certificates</h3>
                 <div class="experience-wrapper">
                     {% for cert in cv.certificates %}
-                        <div class="company-wrapper clearfix">
+                        <div class="cert-date-wrapper clearfix">
                             <div class="experience-title time">{{ cert.start_date }}</div>
                         </div>
-                        <div class="job-wrapper clearfix">
+                        <div class="cert-title-wrapper clearfix">
                             <div class="experience-title">{{ cert.name }}</div>
                         </div>
                     {% endfor %}
                 </div>
 
-                <h3 class="experience-title">Educations</h3>
-                <div class="experience-wrapper">
-                    {% for edu in cv.educations %}
-                        <div class="edu-item-wrapper clearfix">
-                            <div class="experience-title time">{{ edu.duration }}</div>
-                        </div>
-                        <div class="edu-item-wrapper clearfix">
-                            <div class="experience-title">{{ edu.degree_and_major }}</div>
-                        </div>
-                        <div class="edu-item-wrapper clearfix">
-                            <div class="experience-title">{{ edu.school }}</div>
-                        </div>
-                        <div class="jedu-item-wrapper clearfix">
-                            <div class="experience-title">{{ edu.location }}</div>
-                        </div>
-                    {% endfor %}
-                </div>
+               
 
+                
                 <h3 class="experience-title">Languages</h3>
+
                 <div class="experience-wrapper">
                     {% for lang in cv.languages %}
                         <div class="company-wrapper clearfix">
@@ -110,8 +96,8 @@
                 <div class="experience-wrapper">
                     {% for exp in cv.experiences %}
                         <div class="company-wrapper clearfix">
-                            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-                            <div class="time">{{ exp.company }}</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+                            <div class="experience-title">{{ exp.company }}</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                            <div class="time">{{ exp.period }}</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
                         </div>
 
                         <div class="job-wrapper clearfix">
@@ -123,8 +109,9 @@
                     {% endfor %}
                 </div><!--Skill experience-->
 
-                <div class="section-wrapper clearfix">
-                    <h3 class="section-title">Skills</h3> <!-- YOUR SET OF SKILLS  -->
+
+                <h3 class="experience-title">Skills</h3> <!-- YOUR SET OF SKILLS  -->
+                <div class="experience-wrapper">
                     <ul>
                         {% for skill in cv.skills %}
                             <li>
@@ -138,12 +125,6 @@
                         {% endfor %}
                     </ul>
                 </div>
-
-                <div class="section-wrapper clearfix">
-                    <h3 class="section-title">Hobbies</h3> <!-- DESCRIPTION OF YOUR HOBBIES -->
-                    <p>{{ cv.hobbies }}</p>
-                </div>
-
             </div>
         </section>
 

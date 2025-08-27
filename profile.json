@@ -1,18 +1,20 @@
 {
     "name": "Xiao Liu",
-    "title": "You never old",
+    "title": "You are never old",
+    "selfspots": "Do the right things smartly by finding out the major factors",
     "city": "Stuttgart",
     "country": "Germany",
-    "mobile": "015561665338",
+    "mobile": "+49 15561665338",
     "email": "jackliu2006@gmail.com",
     "web": "https://jackliu2006.github.io",
-    "linkedin": "www.linkedin.com/in/jackliu2006",
+    "linkedin": "https://www.linkedin.com/in/jackliu2006",
     "profile": [
-        "Over 15 years of experience including 5+ years as cloud architect...",
-        "Proven expertise in migrating on-premise applications to Azure...",
-        "Adept at leveraging Docker, Kubernetes, Terraform...",
-        "Comprehensive understanding of marketing/sales and CRM processes...",
-        "Committed to delivering seamless business processes..."
+        "Over 15 years of experience including 5+ years as cloud/solution architect driving innovative cloud transformations and architecture designs.",
+        "Deep knowledge and experiences of building up cloud native solutions by utilizing Well-Architected-Framework and security standards",
+        "Proven expertise in migrating on-premise applications to Azure, implementing robust CI/CD pipelines, and orchestrating end-to-end cloud solutions that enhance scalability and security.",
+        "Adept at leveraging diverse technologies, including Docker, Kubernetes, and Terraform, to optimize system integration and performance。",
+        "Possesses a comprehensive understanding of marketing/sales and CRM processes.",
+        "Committed to delivering seamless business processes and high-quality customer experiences through strategic cloud architecture."
     ],
     "certificates": [
         {
@@ -32,7 +34,7 @@
         "period": "Sep 1999 — Jun 2003",
         "degree": "Bachelor of Computer Science",
         "institution": "Dalian Jiaotong University",
-        "location": "Dalian, China"
+        "location": "China"
     },
     "employment_history": [
         {
