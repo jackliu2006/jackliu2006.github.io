@@ -592,7 +592,7 @@ a:hover {
 
 @media (max-width: 450px) {
   .experience .cert-date-wrapper {
-    width: 100%;
+    width: 30%;
     margin-bottom: 20px;
   }
 }
@@ -607,7 +607,7 @@ a:hover {
 
 @media (max-width: 450px) {
   .experience .cert-title-wrapper {
-    width: 100%;
+    width: 70%;
     margin-bottom: 40px;
   }
 }
@@ -616,7 +616,6 @@ a:hover {
 .tabs {
   display: flex;
   cursor: pointer;
-
 }
 
 .tab {
@@ -653,4 +652,34 @@ a:hover {
 
 .active-content {
   display: block;
+}
+
+.experience .skill-name-wrapper {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-right: 5%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 450px) {
+  .experience .skill-name-wrapper {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+.experience .skill-level-wrapper {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-right: 5%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 450px) {
+  .experience .skill-level-wrapper {
+    width: 50%;
+    margin-bottom: 40px;
+  }
 }
