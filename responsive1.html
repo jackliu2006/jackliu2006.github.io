@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJK1Z5EW97"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DJK1Z5EW97');
+    </script>
     <meta charset="UTF-8">
     <title>{{ cv.title }}</title>
     <meta name="viewport" content="width=device-width">
@@ -38,7 +47,7 @@
                         <li>{{ cv.email }}</li>
                         <li><a href="{{ cv.web }}">{{ cv.web }}</a></li>
                         <li>{{ cv.city}} {{ cv.country}}</li>
-                        <li><a href="{{ cv.linkedin }}">{{ cv.linkedin }}</a></li> 
+                        <li><a href="{{ cv.linkedin }}">{{ cv.linkedin }}</a></li>
                     </ul>
                 </div>
 
@@ -51,7 +60,7 @@
                 <div class="tab" onclick="showTab(1)">Skills</div>
                 <div class="tab" onclick="showTab(2)">Showcases</div>
             </div>
-         </section>
+        </section>
 
 
         <section class="experience section-padding tab-content active-content">
@@ -64,47 +73,48 @@
                         {% endfor %}
                     </div>
                 </div>
-                 
+
                 <h3 class="experience-title">Certificates</h3>
                 <div class="experience-wrapper">
                     {% for cert in cv.certificates %}
-                        <div class="cert-date-wrapper clearfix">
-                            <div class="experience-title time">{{ cert.start_date }}</div>
+                    <div class="cert-date-wrapper clearfix">
+                        <div class="experience-title time">{{ cert.start_date }}</div>
+                    </div>
+                    <div class="cert-title-wrapper clearfix">
+                        <div class="experience-title">{{ cert.name }}<a href="{{ cert.link }}"> &#8594; Certificate</a>
                         </div>
-                        <div class="cert-title-wrapper clearfix">
-                            <div class="experience-title">{{ cert.name }}<a href="{{ cert.link }}">  &#8594; Certificate</a></div>
-                        </div>
+                    </div>
                     {% endfor %}
                 </div>
 
-               
+
                 <h3 class="experience-title">Educations</h3>
                 <div class="experience-wrapper">
                     {% for edu in cv.educations %}
-                        <div class="edu-item-wrapper clearfix">
-                            <div class="experience-title time">{{ edu.duration }}</div>
-                        </div>
-                        <div class="edu-item-wrapper clearfix">
-                            <div class="experience-title">{{ edu.degree_and_major }}</div>
-                        </div>
-                        <div class="edu-item-wrapper clearfix">
-                            <div class="experience-title">{{ edu.school }}</div>
-                        </div>
-                      
+                    <div class="edu-item-wrapper clearfix">
+                        <div class="experience-title time">{{ edu.duration }}</div>
+                    </div>
+                    <div class="edu-item-wrapper clearfix">
+                        <div class="experience-title">{{ edu.degree_and_major }}</div>
+                    </div>
+                    <div class="edu-item-wrapper clearfix">
+                        <div class="experience-title">{{ edu.school }}</div>
+                    </div>
+
                     {% endfor %}
                 </div>
 
-                
+
                 <h3 class="experience-title">Languages</h3>
 
                 <div class="experience-wrapper">
                     {% for lang in cv.languages %}
-                        <div class="cert-date-wrapper clearfix">
-                            <div class="experience-title time">{{ lang.name }}</div>
-                        </div>
-                        <div class="cert-title-wrapper clearfix">
-                            <div class="experience-title">{{ lang.level }}</div>
-                        </div>
+                    <div class="cert-date-wrapper clearfix">
+                        <div class="experience-title time">{{ lang.name }}</div>
+                    </div>
+                    <div class="cert-title-wrapper clearfix">
+                        <div class="experience-title">{{ lang.level }}</div>
+                    </div>
                     {% endfor %}
                 </div>
 
@@ -112,17 +122,17 @@
 
                 <div class="experience-wrapper">
                     {% for exp in cv.experiences %}
-                        <div class="company-wrapper clearfix">
-                            <div class="experience-title">{{ exp.company }}</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-                            <div class="time">{{ exp.period }}</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-                        </div>
+                    <div class="company-wrapper clearfix">
+                        <div class="experience-title">{{ exp.company }}</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+                        <div class="time">{{ exp.period }}</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+                    </div>
 
-                        <div class="job-wrapper clearfix">
-                            <div class="experience-title">{{ exp.title }}</div> <!-- JOB TITLE  -->
-                            <div class="company-description">
-                                <p>{{ exp.description }}</p> <!-- JOB DESCRIPTION  -->
-                            </div>
+                    <div class="job-wrapper clearfix">
+                        <div class="experience-title">{{ exp.title }}</div> <!-- JOB TITLE  -->
+                        <div class="company-description">
+                            <p>{{ exp.description }}</p> <!-- JOB DESCRIPTION  -->
                         </div>
+                    </div>
                     {% endfor %}
                 </div><!--Skill experience-->
 
@@ -130,26 +140,26 @@
         </section>
 
         <section class="experience section-padding tab-content">
-             <div class="container">
+            <div class="container">
                 <h3 class="experience-title">Skills</h3> <!-- YOUR SET OF SKILLS  -->
                 <div class="experience-wrapper">
                     <ul>
                         {% for skill in cv.skills %}
-                            <li>
-                                <div class="skill-name-wrapper  clearfix">
-                                    <div class="experience-title time">{{ skill.name }}</div>
-                                </div>
-                                <div class="skill-level-wrapper  clearfix">
-                                    <div class="experience-title">{{ skill.level }}</div>
-                                </div>
-                            </li>
+                        <li>
+                            <div class="skill-name-wrapper  clearfix">
+                                <div class="experience-title time">{{ skill.name }}</div>
+                            </div>
+                            <div class="skill-level-wrapper  clearfix">
+                                <div class="experience-title">{{ skill.level }}</div>
+                            </div>
+                        </li>
                         {% endfor %}
                     </ul>
                 </div>
-             </div>
+            </div>
         </section>
 
-         <section class="experience section-padding tab-content">
+        <section class="experience section-padding tab-content">
             Coming Soon!
         </section>
 
@@ -159,17 +169,17 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
     <script src="./script.js"></script>
 
-<script>
-  function showTab(index) {
-    const tabs = document.querySelectorAll('.tab');
-    const contents = document.querySelectorAll('.tab-content');
+    <script>
+        function showTab(index) {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.tab-content');
 
-    tabs.forEach((tab, i) => {
-      tab.classList.toggle('active-tab', i === index);
-      contents[i].classList.toggle('active-content', i === index);
-    });
-  }
-</script>
+            tabs.forEach((tab, i) => {
+                tab.classList.toggle('active-tab', i === index);
+                contents[i].classList.toggle('active-content', i === index);
+            });
+        }
+    </script>
 </body>
 
 </html>
